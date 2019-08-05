@@ -54,6 +54,7 @@ public class MainForm extends JFrame {
      */
     private void showNewCalender() {
         SwingCalendar sc =SwingCalendar.getInstance_SingletonCalender();
+        sc.setVisible(true);
         Util.Logger.log("Object HC: " + sc.hashCode()); // Log Calender hash code
     }
 
