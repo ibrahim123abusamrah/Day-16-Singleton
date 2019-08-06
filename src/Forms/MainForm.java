@@ -28,14 +28,14 @@ public class MainForm extends JFrame {
         JButton b1 = new JButton("Show Calender 1"); // Button 1 (Create Calender 1)
         b1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ae) {
-                showNewCalender();
+                 showNewCalender();
             }
         });
 
         JButton b2 = new JButton("Show Calender 2"); // Button 2 (Create Calender 2)
         b2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ae) {
-                showNewCalender();
+              showNewCalender();
             }
         });
 
