@@ -76,11 +76,11 @@ public class SwingCalendar extends JFrame {
 
     }
     public static SwingCalendar getInstance_SingletonCalender() {
-        if (SingletonCalender == null){
+
             if (SingletonCalender == null){
                 SingletonCalender = new SwingCalendar();
             }
-        }
+
         return SingletonCalender;
     }
     void updateMonth() {
