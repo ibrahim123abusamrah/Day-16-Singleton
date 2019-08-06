@@ -23,7 +23,7 @@ import java.util.GregorianCalendar;
 import java.util.Locale;
 
 public class SwingCalendar extends JFrame {
-
+    public static SwingCalendar SingletonCalender;
     DefaultTableModel model;
     Calendar cal = new GregorianCalendar();
     JLabel label;
@@ -75,7 +75,14 @@ public class SwingCalendar extends JFrame {
         this.updateMonth();
 
     }
-
+    public static SwingCalendar getInstance_SingletonCalender() {
+        if (SingletonCalender == null){
+            if (SingletonCalender == null){
+                SingletonCalender = new SwingCalendar();
+            }
+        }
+        return SingletonCalender;
+    }
     void updateMonth() {
         cal.set(Calendar.DAY_OF_MONTH, 1);
 
