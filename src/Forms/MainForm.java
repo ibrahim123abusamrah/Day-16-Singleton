@@ -64,7 +64,7 @@ private  boolean iscleack_b1 = false;
      * Todo: This method logs the object HashCode in a text file, after refactoring the code; show warning message if the HashCode of Calender1 doesn't equal Calender2 HashCode
      */
     private int showNewCalender() {
-        SwingCalendar sc = new SwingCalendar();
+        SwingCalendar sc =  SwingCalendar.getInstance_SingletonCalender();
         sc.setVisible(true);
         Util.Logger.log("Object HC: " + sc.hashCode()); // Log Calender hash code
         return  sc.hashCode();
